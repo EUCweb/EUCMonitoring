@@ -7,16 +7,16 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 * outputlocation - Output location for HTML File.
 * htmldatafile - HTML data file (leave as default).
 * htmloutputfile - HTML output file (leave as default).
-refreshduration - Web page refresh interval.<br />
-servererrorfile - Server error file (leave as default).<br />
-desktoperrorfile - Desktop error file (leave as default).<br />
-UpColour - Donut up colour.<br />
-DownColour - Donut down colour.<br />
-WorkerDonutStroke - Worker donut width.<br />
-workerdonutsize - Worker donut size.<br />
-InfraDonutStroke - Infrastructure donut width.<br />
-Infradonutsize - Infrastructure donut size.<br />
-infraerrorfile - Infrastructure error file (leave as default).<br />
+* refreshduration - Web page refresh interval.<br />
+* servererrorfile - Server error file (leave as default).<br />
+* desktoperrorfile - Desktop error file (leave as default).<br />
+* UpColour - Donut up colour.<br />
+* DownColour - Donut down colour.<br />
+* WorkerDonutStroke - Worker donut width.<br />
+* workerdonutsize - Worker donut size.<br />
+* InfraDonutStroke - Infrastructure donut width.<br />
+* Infradonutsize - Infrastructure donut size.<br />
+* infraerrorfile - Infrastructure error file (leave as default).<br />
 ```json
     "WebData": {
         "outputlocation": "c:\\webdata", 
@@ -34,6 +34,17 @@ infraerrorfile - Infrastructure error file (leave as default).<br />
         "infraerrorfile": "infra-errors.txt" 
     }, 
 ```
+### Microsoft Data
+* AD - Active Directory Section
+** test - Test Active Directory?
+            "ADServers": ["dc.domain.com"], 
+            "ADLDAPPort": "389",
+            "ADServices": ["Netlogon","ADWS","NTDS"]
+        },
+        "SQL": {
+            "test": "yes", 
+            "SQLServers": ["sql.domain.com"], 
+            "SQLServices": ["MSSQLServer"]
 ```json
     "Microsoft": { 
         "AD": { 
