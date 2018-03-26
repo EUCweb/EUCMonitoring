@@ -35,12 +35,12 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
     }, 
 ```
 ### Microsoft Data
-* ### AD - Active Directory Section.<br />
+* #### AD - Active Directory Section.<br />
 * test - Test Active Directory?<br />
 * ADServers - Comma delimited list of LDAP servers.<br />
 * ADLDAPPort - Active directory LDAP port.<br />
 * ADServices - Active directory services to check.<br />
-* ### SQL - SQL Server Section.<br />
+* #### SQL - SQL Server Section.<br />
 * test - Test SQL Server?<br />
 * SQLServers - Comma delimited list of SQL Servers.<br />
 * SQLServices - SQL services to check.<br />
