@@ -19,7 +19,10 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
         "InfraDonutStroke": 4, - Thickness of the infrastructure donut ring.
         "Infradonutsize": 160, - Size of the infrastructure donut.
         "infraerrorfile": "infra-errors.txt" - Infrastructure error file.
-    },
+    }, ```
+    Test Text
+    Test Text
+    ```json
     "Microsoft": { - Microsoft Tests.
         "AD": { - Active Directory
             "test": "yes", - Test Active Directory?
