@@ -3,8 +3,8 @@
 This is a reference file for the JSON file that is provided with the EUC Monitoring Tool - below you will find the details of what each line in the JSON file means.
 
 ## JSON Reference
+```json
 {
-    ### Main WebData Area
     "WebData": {
         "outputlocation": "c:\\webdata",
         "htmldatafile": "htmldata.txt",
@@ -137,7 +137,7 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
         }
     }
 }
-
+```
 
 Service reference List
 Provisioning Server:
