@@ -3,8 +3,21 @@
 This is a reference file for the JSON file that is provided with the EUC Monitoring Tool - below you will find the details of what each line in the JSON file means.
 
 ## JSON Reference
+### Web Data
+outputlocation - Output location for HTML File.
+htmldatafile - HTML data file (leave as default).
+htmloutputfile - HTML output file (leave as default).
+refreshduration - Web page refresh interval.
+servererrorfile - Server error file (leave as default).
+desktoperrorfile - Desktop error file (leave as default).
+UpColour - Donut up colour.
+DownColour - Donut down colour.
+WorkerDonutStroke - Worker donut width.
+workerdonutsize - Worker donut size.
+InfraDonutStroke - Infrastructure donut width.
+Infradonutsize - Infrastructure donut size.
+infraerrorfile - Infrastructure error file (leave as default).
 ```json
-{
     "WebData": {
         "outputlocation": "c:\\webdata", 
         "htmldatafile": "htmldata.txt", 
@@ -20,6 +33,8 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
         "Infradonutsize": 160, 
         "infraerrorfile": "infra-errors.txt" 
     }, 
+```
+```json
     "Microsoft": { 
         "AD": { 
             "test": "yes", 
