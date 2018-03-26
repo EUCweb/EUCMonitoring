@@ -94,7 +94,7 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
     "highload": 8000
 },
 ```
-* #### XenServer Section.<br />
+* #### XenServer Section<br />
 * test - Test XenServer?<br />
 * poolmasters - Comma delimited array of XenServer Pool Masters.<br />
 * poolmasterport - Port for Pool Master communication.<br />
@@ -109,22 +109,39 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
     "password": "password"
 },
 ```
+* #### StoreFront Section<br />
+* test - Test StoreFront?<br />
+* storefrontservers - Comma delimited array of StoreFront servers.<br />
+* storefrontport - Port for StoreFront communication (80/443).<br />
+* storefrontpath - Full path to receiver for web site.<br />
+* protocol - Protocol to use.<br />
 ```json
-        "storefront": {
-            "test": "yes",
-            "storefrontservers": "storefront.domain.com",
-            "storefrontport": "80",
-            "storefrontpath": "/citrix/storeweb",
-            "protocol": "http"
-        },
-        "licensing": {
-            "test": "yes",
-            "licenseservers": ["license1.domain.com","license2.domain.com"],
-            "vendordaemonport": "7279",
-            "licenseport": "27000",
-            "webadminport": "8082",
-            "simplelicenseserviceport": "8083"
-        },
+"storefront": {
+    "test": "yes",
+    "storefrontservers": "storefront.domain.com",
+    "storefrontport": "80",
+    "storefrontpath": "/citrix/storeweb",
+    "protocol": "http"
+},
+```
+* #### Licensing Section<br />
+* test - Test Citrix Licensing?<br />
+* licenseservers - Comma delimited array of License servers.<br />
+* vendordaemonport - Port for Vendor Daemon.<br />
+* licenseport - Port for Licensing.<br />
+* webadminport - Port for Web Admin.<br />
+* simplelicenseserviceport - Port for Simple License Service.<br />
+```json
+"licensing": {
+    "test": "yes",
+    "licenseservers": ["license1.domain.com","license2.domain.com"],
+    "vendordaemonport": "7279",
+    "licenseport": "27000",
+    "webadminport": "8082",
+    "simplelicenseserviceport": "8083"
+},
+```
+```json
         "director": {
             "test": "yes",            
             "directorservers": ["director1.domain.com","director2.domain.com"],
