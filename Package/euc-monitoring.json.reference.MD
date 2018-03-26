@@ -94,15 +94,22 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
     "highload": 8000
 },
 ```
-
+* #### XenServer Section.<br />
+* test - Test XenServer?<br />
+* poolmasters - Comma delimited array of XenServer Pool Masters.<br />
+* poolmasterport - Port for Pool Master communication.<br />
+* username - XenServer user name.<br />
+* password - XenServer password.<br />
 ```json
-        "xenserver": {
-            "test": "yes",
-            "poolmasters": ["pool_master_ip1","pool_master_ip2"],
-            "poolmasterport": "80",
-            "username": "root",
-            "password": "password"
-        },
+"xenserver": {
+    "test": "yes",
+    "poolmasters": ["pool_master_ip1","pool_master_ip2"],
+    "poolmasterport": "80",
+    "username": "root",
+    "password": "password"
+},
+```
+```json
         "storefront": {
             "test": "yes",
             "storefrontservers": "storefront.domain.com",
