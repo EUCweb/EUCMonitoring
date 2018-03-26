@@ -38,13 +38,12 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 * AD - Active Directory Section.
 ..* test - Test Active Directory?
 ..* ADServers - Comma delimited list of LDAP servers.
-            "ADLDAPPort": "389",
-            "ADServices": ["Netlogon","ADWS","NTDS"]
-        },
-        "SQL": {
-            "test": "yes", 
-            "SQLServers": ["sql.domain.com"], 
-            "SQLServices": ["MSSQLServer"]
+..* ADLDAPPort - Active directory LDAP port.
+..* ADServices - Active directory services to check.
+* SQL - SQL Server Section.
+..* test - Test SQL Server?
+..* SQLServers - Comma delimited list of SQL Servers.
+..* SQLServices - SQL services to check.
 ```json
     "Microsoft": { 
         "AD": { 
