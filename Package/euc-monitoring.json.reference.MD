@@ -43,38 +43,59 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 * #### SQL - SQL Server Section.<br />
 * test - Test SQL Server?<br />
 * SQLServers - Comma delimited list of SQL Servers.<br />
+* SQLPort - SQL server port to use.<br />
 * SQLServices - SQL services to check.<br />
 ```json
-    "Microsoft": { 
-        "AD": { 
-            "test": "yes", 
-            "ADServers": ["dc.domain.com"], 
-            "ADLDAPPort": "389",
-            "ADServices": ["Netlogon","ADWS","NTDS"]
-        },
-        "SQL": {
-            "test": "yes", 
-            "SQLServers": ["sql.domain.com"], 
-            "SQLServices": ["MSSQLServer"]
-        }
+"Microsoft": { 
+    "AD": { 
+        "test": "yes", 
+        "ADServers": ["dc.domain.com"], 
+        "ADLDAPPort": "389",
+        "ADServices": ["Netlogon","ADWS","NTDS"]
     },
-    "Citrix": {
-        "Global": {
-            "xdbrokerprimary": "xdprimary.domain.com",
-            "xdbrokerfailover": "xdsecondary.domain.com",
-            "workloads": ["server","desktop"],
-            "controlup": "no"
-        },
-        "server": {
-            "bootthreshold": "7",
-            "donutfile": "donut.txt",
-            "highload": 8000
-        },
-        "desktop": {
-            "bootthreshold": "31",
-            "donutfile": "donut.txt",
-            "highload": 8000
-        },
+    "SQL": {
+        "test": "yes", 
+        "SQLServers": ["sql.domain.com"], 
+        "SQLPort": "1433",
+        "SQLServices": ["MSSQLServer"]
+    }
+},
+```
+### Citrix Data
+* #### Global Section.<br />
+* xdbrokerprimary - Primary XD broker to use.<br />
+* xdbrokerfailover - Failover XD broker to use.<br />
+* workloads - Comma delimited array of workloads to check (server/desktop).<br />
+* controlup - Check ControlUp agent.<br />
+* #### Server Section
+* bootthreshold - Days to check for boot threashold.<br />
+* donutfile - Donut data file (lease as default).<br />
+* highload - High load index value.<br />
+* #### Desktop Section
+* bootthreshold - Days to check for boot threashold.<br />
+* donutfile - Donut data file (lease as default).<br />
+* highload - High load index value.<br />
+
+```json
+"Global": {
+    "xdbrokerprimary": "xdprimary.domain.com",
+    "xdbrokerfailover": "xdsecondary.domain.com",
+    "workloads": ["server","desktop"],
+    "controlup": "no"
+},
+"server": {
+    "bootthreshold": "7",
+    "donutfile": "donut.txt",
+    "highload": 8000
+},
+"desktop": {
+    "bootthreshold": "31",
+    "donutfile": "donut.txt",
+    "highload": 8000
+},
+```
+
+```json
         "xenserver": {
             "test": "yes",
             "poolmasters": ["pool_master_ip1","pool_master_ip2"],
