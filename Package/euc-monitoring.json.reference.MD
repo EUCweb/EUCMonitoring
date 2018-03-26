@@ -6,35 +6,31 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 ```json
 {
     "WebData": {
-        "outputlocation": "c:\\webdata", - Output location for the main web page.
-        "htmldatafile": "htmldata.txt", - HTML data file name (Can leave as default).
-        "htmloutputfile": "index.html", - HTML output file name.
-        "refreshduration": 0, - Refresh Duration for the output web page.
-        "servererrorfile": "server-errors.txt", - Server workload error file (Can leave as default).
-        "desktoperrorfile": "desktop-errors.txt", - Desktop workload error file (Can leave as default).
-        "UpColour": "rgba(221, 70, 70, 0.9)", - Service up colour.
-        "DownColour": "rgba(67, 137, 203, 0.95)", - Service down colour.
-        "WorkerDonutStroke": 5, - Thickness of the worker donut ring.
-        "workerdonutsize": 500, - Size of the worker donut.
-        "InfraDonutStroke": 4, - Thickness of the infrastructure donut ring.
-        "Infradonutsize": 160, - Size of the infrastructure donut.
-        "infraerrorfile": "infra-errors.txt" - Infrastructure error file.
-    }, ```
-    Test Text
-    Test Text
-    ```json
-    "Microsoft": { - Microsoft Tests.
-        "AD": { - Active Directory
-            "test": "yes", - Test Active Directory?
-            "ADServers": ["dc.domain.com"], - Comma delimited array of Domain Controllers.
-            "ADLDAPPort": "389", - LDAP active port.
-            "ADServices": ["Netlogon","ADWS","NTDS"] - LDAP services to test.
+        "outputlocation": "c:\\webdata", 
+        "htmldatafile": "htmldata.txt", 
+        "htmloutputfile": "index.html", 
+        "refreshduration": 0,
+        "servererrorfile": "server-errors.txt", 
+        "desktoperrorfile": "desktop-errors.txt", 
+        "UpColour": "rgba(221, 70, 70, 0.9)",
+        "DownColour": "rgba(67, 137, 203, 0.95)", 
+        "WorkerDonutStroke": 5,
+        "workerdonutsize": 500, 
+        "InfraDonutStroke": 4, 
+        "Infradonutsize": 160, 
+        "infraerrorfile": "infra-errors.txt" 
+    }, 
+    "Microsoft": { 
+        "AD": { 
+            "test": "yes", 
+            "ADServers": ["dc.domain.com"], 
+            "ADLDAPPort": "389",
+            "ADServices": ["Netlogon","ADWS","NTDS"]
         },
-        "SQL": { - SQL Server
-            "test": "yes", - Test SQL Server?
-            "SQLServers": ["sql.domain.com"], - Comma delimited array of SQL Serevrs
-            "SQLPort": "1433", - SQL Port
-            "SQLServices": ["MSSQLServer"] - SQL services to test.
+        "SQL": {
+            "test": "yes", 
+            "SQLServers": ["sql.domain.com"], 
+            "SQLServices": ["MSSQLServer"]
         }
     },
     "Citrix": {
