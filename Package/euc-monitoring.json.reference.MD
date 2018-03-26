@@ -35,9 +35,9 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
     }, 
 ```
 ### Microsoft Data
-* AD - Active Directory Section
-** test - Test Active Directory?
-            "ADServers": ["dc.domain.com"], 
+* AD - Active Directory Section.
+..* test - Test Active Directory?
+..* ADServers - Comma delimited list of LDAP servers.
             "ADLDAPPort": "389",
             "ADServices": ["Netlogon","ADWS","NTDS"]
         },
