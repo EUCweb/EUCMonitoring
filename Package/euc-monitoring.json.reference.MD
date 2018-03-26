@@ -4,9 +4,9 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 
 ## JSON Reference
 ### Web Data
-*outputlocation - Output location for HTML File.
-*htmldatafile - HTML data file (leave as default).
-*htmloutputfile - HTML output file (leave as default).
+* outputlocation - Output location for HTML File.
+* htmldatafile - HTML data file (leave as default).
+* htmloutputfile - HTML output file (leave as default).
 refreshduration - Web page refresh interval.<br />
 servererrorfile - Server error file (leave as default).<br />
 desktoperrorfile - Desktop error file (leave as default).<br />
