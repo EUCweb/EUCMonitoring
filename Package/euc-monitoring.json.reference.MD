@@ -4,19 +4,19 @@ This is a reference file for the JSON file that is provided with the EUC Monitor
 
 ## JSON Reference
 ### Web Data
-outputlocation - Output location for HTML File.
-htmldatafile - HTML data file (leave as default).
-htmloutputfile - HTML output file (leave as default).
-refreshduration - Web page refresh interval.
-servererrorfile - Server error file (leave as default).
-desktoperrorfile - Desktop error file (leave as default).
-UpColour - Donut up colour.
-DownColour - Donut down colour.
-WorkerDonutStroke - Worker donut width.
-workerdonutsize - Worker donut size.
-InfraDonutStroke - Infrastructure donut width.
-Infradonutsize - Infrastructure donut size.
-infraerrorfile - Infrastructure error file (leave as default).
+outputlocation - Output location for HTML File.<br />
+htmldatafile - HTML data file (leave as default).<br />
+htmloutputfile - HTML output file (leave as default).<br />
+refreshduration - Web page refresh interval.<br />
+servererrorfile - Server error file (leave as default).<br />
+desktoperrorfile - Desktop error file (leave as default).<br />
+UpColour - Donut up colour.<br />
+DownColour - Donut down colour.<br />
+WorkerDonutStroke - Worker donut width.<br />
+workerdonutsize - Worker donut size.<br />
+InfraDonutStroke - Infrastructure donut width.<br />
+Infradonutsize - Infrastructure donut size.<br />
+infraerrorfile - Infrastructure error file (leave as default).<br />
 ```json
     "WebData": {
         "outputlocation": "c:\\webdata", 
